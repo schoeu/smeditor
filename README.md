@@ -1,18 +1,7 @@
-# SMEditor
+# SUEditor
 
-[![Build Status](https://travis-ci.org/ericjjj/smeditor.svg?branch=master)](https://travis-ci.org/ericjjj/smeditor)
-[![Code Climate](https://codeclimate.com/github/ericjjj/smeditor/badges/gpa.svg)](https://codeclimate.com/github/ericjjj/smeditor)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Downloads](https://img.shields.io/npm/dm/smeditor.svg)](https://npmjs.org/package/smeditor)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+> ✎ 基于 Vue.js 2.0+ 超简文档样式的富文本编辑器, 轻量, 快速, 优雅
 
-> ✎ 基于 Vue.js 2.0+ 石墨文档样式的富文本编辑器, 轻量, 快速, 优雅
-
-在线预览: http://geekpark.github.io/smeditor.github.io
-
-
-## 起因
-之前一直使用的 [wangEditor](https://www.kancloud.cn/wangfupeng/wangeditor3/332599) 不能满足我司编辑和PM需求, 使用过程中也出了很多问题,   [simditor](http://simditor.tower.im/) 体验之后效果不是很好, 并且也不维护了; 目前的[后台管理系统](https://github.com/GeekPark/gpk_admin)技术选型已经转向了 Vue, 所以就有了这个轮子;
 
 ## 功能
 - [x] 轻, 快 48 KB
@@ -27,21 +16,21 @@
 
 ```js
 // 安装
-yarn install smeditor
+yarn install sueditor
 
 // 引入
-import SMEditor from 'smeditor'
+import SUEditor from 'sueditor'
 
 // 全局组件
-Vue.use(SMEditor)
+Vue.use(SUEditor)
 
 // 局部组件
 components: {
-  'smeditor': SMEditor
+  'sueditor': SUEditor
 }
 
 // 使用
-<smeditor :config='config'></smeditor>
+<sueditor :config='config'></sueditor>
 ```
 
 ## 配置
@@ -56,7 +45,7 @@ const config = {
   // 上传成功回调
   uploadCallback: (data) => {
     console.log(data)
-    return 'blob:https://fiddle.jshell.net/00a0b0b4-d19a-4860-9796-137692aef36f'
+    return 'blob:https://xxxx'
   },
   // 上传失败回调, 可选
   uploadFailed: (err) => {
