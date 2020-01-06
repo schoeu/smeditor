@@ -2,13 +2,8 @@
 const path = require('path')
 const config = require('../config')
 const webpack = require('webpack')
-const utils = require('./utils')
 const vueLoaderConfig = require('./vue-loader.conf')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
 function resolve (dir) {
@@ -91,7 +86,5 @@ module.exports = {
           threshold: 10240,
           minRatio: 0.8
         }),
-
-        // new BundleAnalyzerPlugin()
     ]
 }

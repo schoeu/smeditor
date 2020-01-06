@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <div class="header">SMEditor
-      <span>(石墨文档编辑器)</span>
+    <div class="header">SUEditor
+      <span>(超简文档编辑器)</span>
     </div>
     <div class="bg"></div>
     <div class="smeditor-wrapper">
