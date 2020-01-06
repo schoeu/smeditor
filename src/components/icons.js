@@ -1,5 +1,5 @@
 const qiniu = (name) => {
-  return `https://om4m02471.qnssl.com/2018/editor/${name}.svg?2`
+  return `https://qncdn.schoeu.com/editor/${name}.svg`
 }
 
 const names = ['bold', 'italic', 'underline', 'strikethrough', 'color', 'listOrdered', 'listUnordered', 'listCheck', 'indent', 'outdent', 'alignLeft', 'alignCenter', 'alignRight', 'undo', 'redo', 'removeFormat', 'insertVideo', 'insertLink', 'insertImage', 'insertLine', 'insertQuote', 'insertBlock']
